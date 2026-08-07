@@ -1,0 +1,32 @@
+{
+  "name": "@core/db",
+  "version": "1.0.0",
+  "description": "Database manipulation package",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build -f ./tsconfig.json",
+    "start:dev": "tsc --build -f ./tsconfig.json -w",
+
+    "test": "jest --detectOpenHandles --forceExit",
+    "test:dev": "npm run test -- --watchAll",
+    "jsdoc": "tsc && jsdoc build/**/* -d jsdoc",
+    "eslint": "eslint src --ext .ts"
+  },
+  "keywords": [
+    "Query",
+    "Builder"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "",
+  "license": "ISC",
+  "sideEffects": false,
+  "dependencies": {
+    "knex": "^3.2.9",
+    "pg": "^8.20.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.20.0"
+  }
+}

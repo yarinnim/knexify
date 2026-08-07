@@ -1,0 +1,13 @@
+{
+  "extends": "../../bin/config/tsconfig.base.json",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "rootDir": "./src",
+    "outDir": "./build"
+  },
+  "include": [
+    "./src/**/*",
+    "./src/assets/countries.json"
+  ],
+  "exclude": ["./build"]
+}
