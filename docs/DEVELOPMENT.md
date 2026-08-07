@@ -1,11 +1,11 @@
-# @core/db — Development Guide
+# knexify — Development Guide
 
 Internal documentation for developers who maintain or extend this package.
 For consumer usage examples, see [README.md](../README.md).
 
 ## Package purpose
 
-`@core/db` wraps Knex.js and adds:
+`knexify` wraps Knex.js and adds:
 
 - Optional **read / write connection splitting** via a proxy pool
 - Automatic **snake_case ↔ camelCase** conversion
